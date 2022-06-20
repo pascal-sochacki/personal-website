@@ -50,10 +50,10 @@ const Home: NextPage = () => {
                         I am Pascal Sochacki
                     </h1>
                     <p>
-                        I'm Pascal, IT Consultant focus on Cloud and DevOps.
+                        I'm Pascal, IT Consultant focused on Cloud and DevOps.
                     </p>
                     </div>
-                    <div className={ "w-40 rounded-full overflow-hidden border-2 flex bg-d"}>
+                    <div className={"w-40 rounded-full overflow-hidden border-2 flex bg-d"}>
                         <Image src={me} />
                     </div>
 
