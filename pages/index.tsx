@@ -14,7 +14,7 @@ const Home: NextPage = () => {
             </Head>
 
             <div
-                className={"w-full p-5 bg-background_dark flex justify-between items-center px-36 xl:flex-row flex-col"}>
+                className={"w-full p-5 bg-background_dark flex justify-between items-center px-36 xl:flex-row flex-col fixed z-40"}>
                 <Link href={"/"}>
                     <a className={"text-2xl font-azeret"}>sochacki.dev</a>
                 </Link>
@@ -32,32 +32,41 @@ const Home: NextPage = () => {
             </div>
 
 
-            <main className={"px-36 pt-56"}>
-                <div className={"flex items-center gap-5"}>
-                    <div>
-                    <div className={"flex gap-4"}>
-                        <Link href={"https://github.com/pascal-sochacki"}>
-                            <a className={"border-2 rounded-full px-1 border-y-d"}>Github</a>
-                        </Link>
-                        <Link href={"https://www.linkedin.com/in/paso/"}>
-                            <a className={"border-2 rounded-full px-1 border-y-d"}>LinkedIn</a>
-                        </Link>
-                        <Link href={"https://twitter.com/PascalSochacki"}>
-                            <a className={"border-2 rounded-full px-1 border-y-d"}>Twitter</a>
-                        </Link>
-                    </div>
-                    <h1 className={"text-4xl font-bold"}>
-                        I am Pascal Sochacki
-                    </h1>
-                    <p>
-                        I'm Pascal, IT Consultant focused on Cloud and DevOps.
-                    </p>
-                    </div>
-                    <div className={"w-40 rounded-full overflow-hidden border-2 flex bg-d"}>
-                        <Image src={me} />
-                    </div>
+            <main>
+                <section className={"w-screen h-screen grid place-content-center"}>
+                    <div className={"flex items-center gap-5 md:flex-row flex-col-reverse"}>
 
-                </div>
+                        <div>
+                            <div className={"flex gap-4"}>
+                                <Link href={"https://github.com/pascal-sochacki"}>
+                                    <a className={"border-2 rounded-full px-1 border-y-d"}>Github</a>
+                                </Link>
+                                <Link href={"https://www.linkedin.com/in/paso/"}>
+                                    <a className={"border-2 rounded-full px-1 border-y-d"}>LinkedIn</a>
+                                </Link>
+                                <Link href={"https://twitter.com/PascalSochacki"}>
+                                    <a className={"border-2 rounded-full px-1 border-y-d"}>Twitter</a>
+                                </Link>
+                            </div>
+                            <h1 className={"text-4xl font-bold"}>
+                                I am Pascal Sochacki
+                            </h1>
+                            <p>
+                                I'm Pascal, IT Consultant focused on Cloud and DevOps.
+                            </p>
+                            <p className={"text-2xl"}>
+                                Website under construction 🏗!
+                            </p>
+                        </div>
+                        <div className={"w-44 relative border-2 rounded-full overflow-hidden border-d place-content-center bg-texta"}>
+                            <Image src={me} layout={"responsive"}/>
+                        </div>
+
+                    </div>
+                </section>
+                <section className={"w-screen h-screen bg-d p-20"}>
+                    <h1 className={"text-background_dark text-2xl font-bold"}>Working Experience</h1>
+                </section>
 
             </main>
         </>
